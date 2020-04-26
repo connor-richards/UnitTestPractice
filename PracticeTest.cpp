@@ -63,11 +63,81 @@ TEST(PracticeTest, is_empty_palindrome)
     ASSERT_TRUE(actual);
 }
 
-TEST(PracticeTest, is_simple_sort)
+TEST(PracticeTest, reverse_sort)
 {
     Practice obj;
     int first = 1;
     int second = 2;
+    int third = 3;
+    bool passed = false;
+    obj.sortDescending(first , second, third);
+    if(first == 3 && second == 2 && third == 1) {
+      passed = true;
+    }
+    ASSERT_TRUE(passed);
+}
+
+TEST(PracticeTest, in_order_sort)
+{
+    Practice obj;
+    int first = 3;
+    int second = 2;
+    int third = 1;
+    bool passed = false;
+    obj.sortDescending(first , second, third);
+    if(first == 3 && second == 2 && third == 1) {
+      passed = true;
+    }
+    ASSERT_TRUE(passed);
+}
+
+TEST(PracticeTest, third_second_sort)
+{
+    Practice obj;
+    int first = 3;
+    int second = 1;
+    int third = 2;
+    bool passed = false;
+    obj.sortDescending(first , second, third);
+    if(first == 3 && second == 2 && third == 1) {
+      passed = true;
+    }
+    ASSERT_TRUE(passed);
+}
+
+TEST(PracticeTest, second_first_sort)
+{
+    Practice obj;
+    int first = 2;
+    int second = 3;
+    int third = 1;
+    bool passed = false;
+    obj.sortDescending(first , second, third);
+    if(first == 3 && second == 2 && third == 1) {
+      passed = true;
+    }
+    ASSERT_TRUE(passed);
+}
+
+TEST(PracticeTest, third_first_sort)
+{
+    Practice obj;
+    int first = 1;
+    int second = 3;
+    int third = 2;
+    bool passed = false;
+    obj.sortDescending(first , second, third);
+    if(first == 3 && second == 2 && third == 1) {
+      passed = true;
+    }
+    ASSERT_TRUE(passed);
+}
+
+TEST(PracticeTest, first_third_sort)
+{
+    Practice obj;
+    int first = 2;
+    int second = 1;
     int third = 3;
     bool passed = false;
     obj.sortDescending(first , second, third);
